@@ -1,0 +1,133 @@
+.btn-primary {
+  background: #002F5F;
+  margin-top: 30px;
+  line-height: 0;
+  padding: 20px 10px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-bottom: 5px solid #EEAF30;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.btn-primary:hover {
+  border-bottom: 5px solid #002F5F;
+}
+
+.text-orange {
+  color: #EEAF30;
+}
+
+.btn-primary:hover {
+  background: #EEAF30;
+}
+
+.hero .btn-get-started {
+  border-bottom: 5px solid #EEAF30;
+}
+
+.hero .btn-get-started:hover {
+  background: #EEAF30;
+  border-bottom: 5px solid #002F5F;
+}
+
+.border-20px {
+  border-radius: 20px;
+}
+
+.text-primary {
+  color: #002F5F !important;
+}
+
+.border-e-0 {
+  border-right: none;
+}
+
+.border-s-0 {
+  border-left: none;
+}
+
+.bg-primary {
+  background: #002F5F !important;
+}
+
+.check {
+  font-size: 20px;
+}
+
+.table-angsuran {
+  border: 2px solid black;
+}
+
+.services .service-box.primary {
+  border-bottom: 3px solid #002F5F;
+}
+
+.services .service-box.primary .icon {
+  color: #002F5F;
+  background: #dbf3fe;
+}
+
+.services .service-box.primary .read-more {
+  color: #2db6fa;
+}
+
+.services .service-box.primary:hover {
+  background: #002F5F;
+}
+
+.services .service-box.purple {
+  border-bottom: 3px solid #9A2B91;
+}
+
+.navbar ul li a {
+  font-size: 20px;
+  color: #002F5F;
+}
+.navbar ul li a:focus {
+  font-size: 20px;
+  color: #002F5F;
+}
+.navbar ul li a:hover {
+  font-size: 20px;
+  color: #002F5F;
+  text-decoration: underline;
+  text-decoration-color: #EEAF30;
+}
+.navbar ul li a.active {
+  font-size: 20px;
+  color: #002F5F;
+  text-decoration: underline;
+  text-decoration-color: #EEAF30;
+}
+.navbar ul li a.active:focus {
+  font-size: 20px;
+  color: #002F5F;
+  text-decoration: underline;
+  text-decoration-color: #EEAF30;
+}
+.navbar .navbar-wa {
+  display: none;
+}
+
+.hero h1 {
+  color: #002F5F;
+}
+.hero .btn-get-started {
+  background: #002F5F;
+  border-radius: 20px;
+}
+
+@media (max-width: 991px) {
+  .navbar .navbar-wa {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */

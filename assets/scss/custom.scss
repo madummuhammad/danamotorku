@@ -1,0 +1,149 @@
+$primary:#002F5F;
+$purple:#9A2B91;
+$orange:#EEAF30;
+
+.btn-primary{
+	background:$primary;
+	margin-top: 30px;
+	line-height: 0;
+	padding: 20px 10px;
+	border-radius: 4px;
+	transition: 0.5s;
+	color: #fff;
+	font-family: "Nunito", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 1px;
+	border-bottom:5px solid $orange;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.btn-primary:hover{
+	border-bottom:5px solid $primary;
+}
+
+.text-orange{
+	color: $orange;
+}
+
+.btn-primary:hover{
+	background: $orange;
+}
+
+.hero .btn-get-started {
+	border-bottom:5px solid $orange;
+}
+
+.hero .btn-get-started:hover {
+	background: $orange;
+	border-bottom:5px solid $primary;
+}
+
+.border-20px{
+	border-radius: 20px;
+}
+
+.text-primary{
+	color: $primary !important;
+}
+
+.border-e-0{
+	border-right:none;
+}
+
+.border-s-0{
+	border-left:none;
+}
+
+.bg-primary{
+	background:$primary !important;
+}
+
+.check{
+	font-size: 20px;
+}
+
+.table-angsuran{
+	border:2px solid black;
+}
+
+.services .service-box.primary {
+	border-bottom: 3px solid $primary;
+}
+.services .service-box.primary .icon {
+	color: $primary;
+	background: #dbf3fe;
+}
+.services .service-box.primary .read-more {
+	color: #2db6fa;
+}
+.services .service-box.primary:hover {
+	background: $primary;
+}
+
+.services{
+	.service-box.purple{
+		border-bottom: 3px solid $purple;
+	}
+}
+
+.navbar{
+	ul{
+		li{
+			a{
+				font-size: 20px;
+				color: $primary;
+
+			}
+			a:focus{
+				font-size: 20px;
+				color:$primary;
+			}
+
+			a:hover{
+				font-size: 20px;
+				color: $primary;
+				text-decoration:underline;
+				text-decoration-color:$orange;
+			}
+
+			a.active{
+				font-size: 20px;
+				color: $primary;
+				text-decoration:underline;
+				text-decoration-color:$orange;
+			}
+
+			a.active:focus{
+				font-size: 20px;
+				color: $primary;
+				text-decoration:underline;
+				text-decoration-color:$orange;
+			}
+		}
+	}
+
+	.navbar-wa{
+		display: none;
+	}
+}
+
+.hero{
+	h1{
+		color: $primary;
+	}
+	.btn-get-started{
+		background: $primary;
+		border-radius:20px;
+	}
+}
+
+@media (max-width: 991px) {
+	.navbar{
+		.navbar-wa{
+			display: block;
+		}
+	}
+}

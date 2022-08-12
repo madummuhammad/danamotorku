@@ -1,6 +1,8 @@
 $primary:#002F5F;
 $purple:#9A2B91;
 $orange:#EEAF30;
+$whatsapp:#39DD56;
+$grey:#EEF2F5;
 
 .btn-primary{
 	background:$primary;
@@ -25,11 +27,15 @@ $orange:#EEAF30;
 }
 
 .text-orange{
-	color: $orange;
+	color: $orange !important;
 }
 
 .btn-primary:hover{
 	background: $orange;
+}
+
+.btn-orange{
+	background: orange;
 }
 
 .hero .btn-get-started {
@@ -61,12 +67,47 @@ $orange:#EEAF30;
 	background:$primary !important;
 }
 
+.bg-orange{
+	background: $orange !important;
+	color: white !important;
+	border-color:$orange !important;
+}
+
+.border-check{
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background: $orange;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	margin-top: 1px;
+}
+
+.ls-4px{
+	letter-spacing: 4px !important;
+}
 .check{
 	font-size: 20px;
 }
 
+.border-bottom-1px{
+	border-bottom: 1px solid #ECECEC;
+}
+
+.border-black{
+	border-color:#747476 !important; 
+}
+
 .table-angsuran{
-	border:2px solid black;
+	border:1px solid black;
+	thead{
+		border-bottom:2px solid black;
+		border-right:2px solid $orange;
+		border-left:2px solid $orange;
+		border-top:2px solid $orange;
+	}
 }
 
 .services .service-box.primary {
@@ -87,6 +128,10 @@ $orange:#EEAF30;
 	.service-box.purple{
 		border-bottom: 3px solid $purple;
 	}
+}
+
+.bg-grey{
+	background:$grey;
 }
 
 .navbar{
@@ -126,8 +171,19 @@ $orange:#EEAF30;
 	}
 
 	.navbar-wa{
+		background: $whatsapp;
 		display: none;
+		border-radius:20px;
 	}
+}
+
+.sub-text-orange {
+	font-size: 13px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	margin: 0;
+	color: #EEAF30;
+	text-transform: uppercase;
 }
 
 .hero{

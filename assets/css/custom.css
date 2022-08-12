@@ -21,11 +21,15 @@
 }
 
 .text-orange {
-  color: #EEAF30;
+  color: #EEAF30 !important;
 }
 
 .btn-primary:hover {
   background: #EEAF30;
+}
+
+.btn-orange {
+  background: orange;
 }
 
 .hero .btn-get-started {
@@ -57,12 +61,48 @@
   background: #002F5F !important;
 }
 
+.bg-orange {
+  background: #EEAF30 !important;
+  color: white !important;
+  border-color: #EEAF30 !important;
+}
+
+.border-check {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #EEAF30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 1px;
+}
+
+.ls-4px {
+  letter-spacing: 4px !important;
+}
+
 .check {
   font-size: 20px;
 }
 
+.border-bottom-1px {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.border-black {
+  border-color: #747476 !important;
+}
+
 .table-angsuran {
-  border: 2px solid black;
+  border: 1px solid black;
+}
+.table-angsuran thead {
+  border-bottom: 2px solid black;
+  border-right: 2px solid #EEAF30;
+  border-left: 2px solid #EEAF30;
+  border-top: 2px solid #EEAF30;
 }
 
 .services .service-box.primary {
@@ -84,6 +124,10 @@
 
 .services .service-box.purple {
   border-bottom: 3px solid #9A2B91;
+}
+
+.bg-grey {
+  background: #EEF2F5;
 }
 
 .navbar ul li a {
@@ -113,7 +157,18 @@
   text-decoration-color: #EEAF30;
 }
 .navbar .navbar-wa {
+  background: #39DD56;
   display: none;
+  border-radius: 20px;
+}
+
+.sub-text-orange {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #EEAF30;
+  text-transform: uppercase;
 }
 
 .hero h1 {

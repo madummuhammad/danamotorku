@@ -7,8 +7,8 @@ $grey:#EEF2F5;
 .btn-primary{
 	background:$primary;
 	margin-top: 30px;
-	line-height: 0;
-	padding: 20px 10px;
+	// line-height: 0;
+	padding: 10px 10px;
 	border-radius: 4px;
 	transition: 0.5s;
 	color: #fff;
@@ -189,11 +189,22 @@ $grey:#EEF2F5;
 .hero{
 	h1{
 		color: $primary;
+		font-size: 40px;
 	}
 	.btn-get-started{
 		background: $primary;
 		border-radius:20px;
 	}
+}
+
+.service-box.primary{
+	// .icon{
+	// 	background: red !important;
+	// }
+}
+
+.icon{
+	width: 35%;
 }
 
 @media (max-width: 991px) {

@@ -6,5 +6,26 @@ $("#hitung-pinjaman #hitung").on('click',function(){
 	var merek=$("#hitung-pinjaman [name=merek]").val();
 
 
-	window.open("https://api.whatsapp.com/send?phone=6285867136852&text=Hallo%20Admin,%0ASaya%20mau%20tanya%20hitungan%20pinjaman:%0ADana Pinjaman:Rp."+jml_dana+"%0ATenor:"+tenor+"%0AKota%2fKabupaten:"+kota+"%0AMerek,%20Tipe%20%26%20Tahun:"+merek+"%0ATerimakasih", '_blank');
+	window.open("https://api.whatsapp.com/send?phone=6285867136852&text=Hallo%20Admin,%0ASaya%20mau%20tanya%20hitungan%20pinjaman:%0ADana Pinjaman:"+jml_dana+"%0ATenor:"+tenor+"%0AKota%2fKabupaten:"+kota+"%0AMerek,%20Tipe%20%26%20Tahun:"+merek+"%0ATerimakasih", '_blank');
 })
+
+var rupiah = document.getElementById('rupiah');
+rupiah.addEventListener('keyup', function(e){
+	rupiah.value = formatRupiah(this.value, 'Rp. ');
+});
+
+function formatRupiah(angka, prefix){
+	var number_string = angka.replace(/[^,\d]/g, '').toString(),
+	split   		= number_string.split(','),
+	sisa     		= split[0].length % 3,
+	rupiah     		= split[0].substr(0, sisa),
+	ribuan     		= split[0].substr(sisa).match(/\d{3}/gi);
+
+	if(ribuan){
+		separator = sisa ? '.' : '';
+		rupiah += separator + ribuan.join('.');
+	}
+
+	rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+	return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
+}

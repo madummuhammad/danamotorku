@@ -1,8 +1,7 @@
 .btn-primary {
   background: #002F5F;
   margin-top: 30px;
-  line-height: 0;
-  padding: 20px 10px;
+  padding: 10px 10px;
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
@@ -173,10 +172,15 @@
 
 .hero h1 {
   color: #002F5F;
+  font-size: 40px;
 }
 .hero .btn-get-started {
   background: #002F5F;
   border-radius: 20px;
+}
+
+.icon {
+  width: 35%;
 }
 
 @media (max-width: 991px) {

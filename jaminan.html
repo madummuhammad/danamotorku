@@ -47,7 +47,7 @@
           <li><a class="nav-link scrollto" href="komisi.html">Dapatkan Komisi Mediator</a></li>
           <li><a class="nav-link scrollto active" href="jaminan.html">Jaminan Pasti Cair</a></li>
         </ul>
-        <div class="navbar-wa me-2"><a class="p-0 text-white px-2 py-1" href="https://api.whatsapp.com/send?phone=6287792963030&text=Hallo%20Admin%0ASaya%20perlu%20info%20Pinjaman%20Gadai%20BPKB%20Motor%20." target="_blank"><i class="bi bi-whatsapp me-2"></i> 087792963030</a></div>
+        <div class="navbar-wa me-2"><a class="p-0 text-white px-2 py-1 no_hp_href" target="_blank"><i class="bi bi-whatsapp me-2"></i> <span class="no_hp"></span></a></div>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
@@ -64,7 +64,7 @@
           <h2 class="fs-2">Dengan pengalaman dan jaringan perusahaan multifinance kami yang luas</h2>
           <div >
             <div class="text-center text-lg-start">
-              <a href="https://api.whatsapp.com/send?phone=6287792963030&text=Hallo%20Admin%0ASaya%20perlu%20info%20Pinjaman%20Gadai%20BPKB%20Motor%20." target="_blank" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center py-4">
+              <a target="_blank" class="no_hp_href btn-get-started scrollto d-inline-flex align-items-center justify-content-center py-4">
                 <span>Ajukan Sekarang</span>
               </a>
             </div>
@@ -228,7 +228,7 @@
           </div>
           <div class="col-md-12">
             <div class="info-box py-2 ">
-              <p class="text-white mb-2"><i class="bi bi-whatsapp text-white"></i> 6287792963030</p>
+              <p class="text-white mb-2"><i class="bi bi-whatsapp text-white"></i> <span class="no_hp"></span></p>
               <p class="text-white"><i class="bi bi-envelope text-white"></i> admin@danamotorku.com</p>
             </div>
           </div>
@@ -271,9 +271,33 @@
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/jquery/jquery-3.6.0.js"></script>
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
+<script type="text/javascript">
+  var hari=new Date().getDay();
+  if(hari==1){
+
+  } else if(hari==2){
+    var no_hp='081390000292';
+  }else if(hari==3){
+
+  } else if(hari==4){
+
+  } else if(hari==5){
+
+  } else if(hari==6){
+
+  }else if(hari==7){
+
+  }
+  var no_hp_replace=no_hp.replace('08','628');
+  $(".no_hp").html('<span>'+no_hp+'</span>');
+  $(".no_hp_href").attr('href','https://api.whatsapp.com/send?phone='+no_hp_replace+'&text=Hallo%20Admin%0ASaya%20perlu%20info%20Pinjaman%20Gadai%20BPKB%20Motor%20.');
+  $(".no_hp_href_2").attr('href','https://api.whatsapp.com/send?phone='+no_hp_replace+'&text=Hallo%20Admin%0ASaya%20perlu%20info%20Mediator%20Gadai%20BPKB%20Motor%20.');
+</script>
+
 
 </body>
 
